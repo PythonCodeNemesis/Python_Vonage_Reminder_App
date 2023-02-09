@@ -1,8 +1,5 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from twilio.rest import Client
-import schedule
-import time
 import vonage
 from flask_apscheduler import APScheduler
 
@@ -11,7 +8,7 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 scheduler = APScheduler()
 
-client = vonage.Client(key="key", secret="secret")
+client = vonage.Client(key="ed8c6841", secret="eXpAGMqYx9Hg44p9")
 sms = vonage.Sms(client)
 
 

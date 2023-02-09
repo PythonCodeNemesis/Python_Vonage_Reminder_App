@@ -1,11 +1,11 @@
 import React from "react";
-import EcoFriendlyForm from "./EcoFriendlyForm";
+import DrinkingWaterForm from "./DrinkingWaterForm";
 
 function App() {
   return (
     <div>
-      <h1>Eco-Friendly Reminder Service</h1>
-      <EcoFriendlyForm />
+      <h1>Drinking Water Reminder Service</h1>
+      <DrinkingWaterForm />
     </div>
   );
 }

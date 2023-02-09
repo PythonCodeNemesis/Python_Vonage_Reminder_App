@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\soumi\TwilioPythonEarthday\backend\venv"
+VIRTUAL_ENV="C:\Users\usr\Python_Vonage_Reminder_App\backend\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

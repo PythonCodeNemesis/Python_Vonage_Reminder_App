@@ -8,18 +8,7 @@ const SignUpForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Code to make a POST request to the "/sign-up" endpoint goes here
-    // fetch('http://127.0.0.1:5000/sign-up/', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify({
-    //     phoneNumber: phoneNumber,
-    //     frequency: frequency
-    //   })
-    // })
+
     console.log(
       JSON.stringify({
         phoneNumber: phoneNumber,
@@ -54,7 +43,7 @@ const SignUpForm = () => {
 
   return (
     <div style={containerStyle}>
-      <img src={earthImage} alt="Earth Day" style={imageStyle} />
+      <img src={drinkwater} alt="Drink Water Img" style={imageStyle} />
       <h1 style={titleStyle}>Eco-Friendly Reminder Service</h1>
       <Form onSubmit={handleSubmit} style={formStyle}>
         <Form.Group>
@@ -121,6 +110,6 @@ const submitButtonStyle = {
   color: "#FFFFFF",
 };
 
-const earthImage = "path/to/earth-day-image.png";
+const drinkwater = "drinkwater.jpg";
 
 export default SignUpForm;
