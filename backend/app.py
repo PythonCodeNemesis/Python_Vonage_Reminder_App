@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import vonage
 from flask_apscheduler import APScheduler
@@ -21,7 +21,7 @@ def send_reminders(phone_number):
   {
       "from": "Vonage APIs",
       "to": phone_number,
-      "text": "A text message sent using the Nexmo SMS API scheduler",
+      "text": "Drink a glass of water now!",
   }
   )
 
@@ -46,7 +46,7 @@ def sign_up():
     {
         "from": "Vonage APIs",
         "to": phone_number,
-        "text": "A text message sent using the Nexmo SMS API first",
+        "text": "Thanks for subscribing to the Drinking Water Reminder Service!",
     }
   )
 
