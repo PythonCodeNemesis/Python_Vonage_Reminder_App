@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
-import drinkwater from './drinkwater.jpg';
+import drinkwater from "./drinkwater.jpg";
 
 const SignUpForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -44,7 +44,12 @@ const SignUpForm = () => {
 
   return (
     <div style={containerStyle}>
-      <img src={drinkwater} alt="this is car image" width={"400px"} height={"220px"}/>
+      <img
+        src={drinkwater}
+        alt="this is car image"
+        width={"400px"}
+        height={"220px"}
+      />
       <h1 style={titleStyle}>Drinking Water Reminder Service</h1>
       <Form onSubmit={handleSubmit} style={formStyle}>
         <Form.Group>
@@ -58,7 +63,7 @@ const SignUpForm = () => {
           />
         </Form.Group>
         <Form.Group>
-          <Form.Label style={formLabelStyle}>Frequency (hours)</Form.Label>
+          <Form.Label style={formLabelStyle}>Frequency (mins)</Form.Label>
           <Form.Control
             type="number"
             value={frequency}
@@ -110,7 +115,5 @@ const submitButtonStyle = {
   backgroundColor: "#048C03",
   color: "#FFFFFF",
 };
-
-
 
 export default SignUpForm;

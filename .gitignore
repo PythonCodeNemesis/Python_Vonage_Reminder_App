@@ -1,5 +1,3 @@
-config.py
-app2.py
-app3.py
-app4.py
-app5_works.py
+private.key
+backend/app_with_secrets.js
+.vscode
