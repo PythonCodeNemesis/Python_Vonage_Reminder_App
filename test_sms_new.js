@@ -6,11 +6,9 @@ PRIVATE_KEY_PATH = "private.key";
 
 const messagesClient = new Messages(
   new Auth({
-    // apiKey: "7ba90928",
-    // apiSecret: "1daKAeaTFCBpXOKL",
-    apiKey: "ed8c6841",
-    apiSecret: "eXpAGMqYx9Hg44p9",
-    applicationId: "2ac0d24b-bd1b-4c88-8f47-1b359748ca8f",
+    apiKey: API_KEY,
+    apiSecret: API_SECRET,
+    applicationId: APPLICATION_ID,
     privateKey: PRIVATE_KEY_PATH,
   })
   // options
@@ -19,7 +17,7 @@ messagesClient
   .send(
     new SMS({
       message_type: "text",
-      to: "918697581335",
+      to: "number",
       from: "Vonage APIs",
       text: "Hi from Python Code Nemesis",
     })
