@@ -31,6 +31,7 @@ function sendReminders(phoneNumber) {
   messagesClient
     .send(
       new SMS({
+        message_type: "text",
         to: to,
         from: from,
         text: text,
@@ -58,6 +59,7 @@ app.post("/sign-up", (req, res) => {
   messagesClient
     .send(
       new SMS({
+        message_type: "text",
         to: phoneNumber,
         from: from,
         text: text,
