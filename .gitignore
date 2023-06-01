@@ -1,3 +1,4 @@
 private.key
 backend/app_with_secrets.js
 .vscode
+node_modules
