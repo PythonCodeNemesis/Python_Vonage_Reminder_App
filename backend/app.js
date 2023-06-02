@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const { SMS } = require("@vonage/messages");
 const schedule = require("node-schedule");
@@ -42,7 +41,8 @@ function sendReminders(phoneNumber) {
 }
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.post("/sign-up", (req, res) => {
   const phoneNumber = req.body.phoneNumber;
